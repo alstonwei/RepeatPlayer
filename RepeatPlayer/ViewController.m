@@ -7,21 +7,28 @@
 //
 
 #import "ViewController.h"
+#import "RepeatPlayer.h"
 
 @interface ViewController ()
 
+@property(nonatomic,strong) RepeatPlayer *repeatPlayer;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"welcome_video" ofType:@"mp4"];
+    NSURL *url = [NSURL fileURLWithPath:filePath];
+    
+    //类方法。
+    //self.repeatPlayer = [RepeatPlayer showInView:self.view src:url];
+    //[self.repeatPlayer play];
+    
+    self.repeatPlayer = [[RepeatPlayer alloc] initWithSrc:url];
+    //self.repeatPlayer.autoPlay = true;
+    [self.repeatPlayer showInView:self.view];
+    
 }
 
 @end

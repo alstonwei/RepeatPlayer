@@ -15,6 +15,8 @@
 		F957C3271C217D96001D3953 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F957C3251C217D96001D3953 /* LaunchScreen.storyboard */; };
 		F957C3321C217D97001D3953 /* RepeatPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F957C3311C217D97001D3953 /* RepeatPlayerTests.m */; };
 		F957C33D1C217D97001D3953 /* RepeatPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F957C33C1C217D97001D3953 /* RepeatPlayerUITests.m */; };
+		F957C34D1C217DBC001D3953 /* RepeatPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F957C34C1C217DBC001D3953 /* RepeatPlayer.m */; };
+		F957C34F1C217DC8001D3953 /* welcome_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F957C34E1C217DC8001D3953 /* welcome_video.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		F957C3381C217D97001D3953 /* RepeatPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepeatPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F957C33C1C217D97001D3953 /* RepeatPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RepeatPlayerUITests.m; sourceTree = "<group>"; };
 		F957C33E1C217D97001D3953 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F957C34B1C217DBC001D3953 /* RepeatPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepeatPlayer.h; sourceTree = "<group>"; };
+		F957C34C1C217DBC001D3953 /* RepeatPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepeatPlayer.m; sourceTree = "<group>"; };
+		F957C34E1C217DC8001D3953 /* welcome_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = welcome_video.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,7 @@
 		F957C30B1C217D96001D3953 = {
 			isa = PBXGroup;
 			children = (
+				F957C34E1C217DC8001D3953 /* welcome_video.mp4 */,
 				F957C3161C217D96001D3953 /* RepeatPlayer */,
 				F957C3301C217D97001D3953 /* RepeatPlayerTests */,
 				F957C33B1C217D97001D3953 /* RepeatPlayerUITests */,
@@ -101,6 +107,7 @@
 		F957C3161C217D96001D3953 /* RepeatPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				F957C34A1C217DBC001D3953 /* RepeatPlayer */,
 				F957C31A1C217D96001D3953 /* AppDelegate.h */,
 				F957C31B1C217D96001D3953 /* AppDelegate.m */,
 				F957C31D1C217D96001D3953 /* ViewController.h */,
@@ -138,6 +145,15 @@
 				F957C33E1C217D97001D3953 /* Info.plist */,
 			);
 			path = RepeatPlayerUITests;
+			sourceTree = "<group>";
+		};
+		F957C34A1C217DBC001D3953 /* RepeatPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				F957C34B1C217DBC001D3953 /* RepeatPlayer.h */,
+				F957C34C1C217DBC001D3953 /* RepeatPlayer.m */,
+			);
+			path = RepeatPlayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +261,7 @@
 			files = (
 				F957C3271C217D96001D3953 /* LaunchScreen.storyboard in Resources */,
 				F957C3241C217D96001D3953 /* Assets.xcassets in Resources */,
+				F957C34F1C217DC8001D3953 /* welcome_video.mp4 in Resources */,
 				F957C3221C217D96001D3953 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +290,7 @@
 				F957C31F1C217D96001D3953 /* ViewController.m in Sources */,
 				F957C31C1C217D96001D3953 /* AppDelegate.m in Sources */,
 				F957C3191C217D96001D3953 /* main.m in Sources */,
+				F957C34D1C217DBC001D3953 /* RepeatPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
